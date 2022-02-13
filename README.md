@@ -20,7 +20,9 @@ ip link set wlan1 up
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime --band a wlan0
 airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan0
+```
 
+```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime --band a wlan1
 airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan1
 ```
