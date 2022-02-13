@@ -17,9 +17,11 @@ airmon-ng start wlan0
 ```
 
 ```bash
-airodump-ng wlan0 --band a --manufacturer --beacons --showack --wps --uptime
+airodump-ng --manufacturer --beacons --showack --wps --uptime --band a wlan0
+airodump-ng bg --manufacturer --beacons --showack --wps --uptime --band wlan0
 
-airodump-ng wlan0 --band bg --manufacturer --beacons --showack --wps --uptime
+airodump-ng --manufacturer --beacons --showack --wps --uptime --band a --bssid 00:00:00:00:00:00 --channel 1 wlan0
+airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg --bssid 00:00:00:00:00:00 --channel 52 wlan0
 ```
 
 ```bash
