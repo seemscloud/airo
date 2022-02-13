@@ -14,20 +14,26 @@ iw dev wlan1 set type monitor
 ip link set wlan1 up
 ```
 
-## Monitoring
+## Monitor
+
+### Generic
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band a wlan0
-            
+
+# or
+
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band bg wlan0
 ```
 
+### Single BSSID
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --bssid 00:00:00:00:00:00 --channel 1 wlan0
 ```
 
+### Single BSSID + to File
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --bssid 00:00:00:00:00:00 --channel 1 \
