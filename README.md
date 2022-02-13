@@ -36,7 +36,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 ### Channel
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --bassid CHANGEME --band abg wlan0
+            --bssid CHANGEME --band abg wlan0
 ```
 
 ### Target
