@@ -45,7 +45,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 ### Target
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --write-interval 5 --output-format pcap --write target \
+            --write-interval 1 --output-format pcap --write target \
             --channel CHANGEME --bssid CHANGEME wlan1
 ```
 
