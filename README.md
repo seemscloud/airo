@@ -47,7 +47,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 cat > target.sh << "EndOfMessage"
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --write-interval 5 --output-format pcap --write target \
-            --bssid CHANGEME --channel 1 wlan0
+            --channel 1 --bssid CHANGEME wlan0
 EndOfMessage
 
 chmod +x target.sh
