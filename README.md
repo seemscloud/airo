@@ -38,7 +38,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan0
 
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --write-interval 5 --output-format pcap --write session0 \
+            --write-interval 1 --output-format csv --write sessions \
             --band bg wlan0
 ```
 
@@ -50,7 +50,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --write-interval 5 --output-format pcap --write session0 \
+            --write-interval 5 --output-format pcap --write sessions \
             --bssid CHANGEME --channel 1 wlan0
 ```
 
