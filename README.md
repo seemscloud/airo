@@ -24,7 +24,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band a --bssid 00:00:00:00:00:00 --channel 1 \
-            --write-interval 5 --output-format pcap --write alfa-session0 wlan0
+            --write-interval 5 --output-format pcap --write session0 wlan0
 ```
 
 ```bash
