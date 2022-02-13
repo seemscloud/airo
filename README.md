@@ -17,7 +17,10 @@ ip link set wlan1 up
 ## Monitoring
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --band abg wlan0
+            --band a wlan0
+            
+airodump-ng --manufacturer --beacons --showack --wps --uptime \
+            --band bg wlan0
 ```
 
 ```bash
