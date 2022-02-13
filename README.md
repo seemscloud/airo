@@ -15,12 +15,20 @@ ip link set wlan1 up
 ```
 
 ## Monitor
+
+### Generic
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime --band a wlan0
 
 airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan0
 ```
 
+```bash
+airodump-ng --manufacturer --beacons --showack --wps --uptime \
+            --write-interval 5 --output-format pcap wlan0 --write session0
+```
+
+### Target
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --bssid 00:00:00:00:00:00 --channel 1 wlan0
