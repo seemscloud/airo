@@ -17,14 +17,19 @@ airmon-ng start wlan0
 ```
 
 ```bash
-airodump-ng --manufacturer --beacons --showack --wps --uptime --band a wlan0
-airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan0
+airodump-ng --manufacturer --beacons --showack --wps --uptime \
+            --band abg wlan0
+```
+
+```bash
+airodump-ng --manufacturer --beacons --showack --wps --uptime \
+            --band abg --bssid 00:00:00:00:00:00 --channel 1 wlan0
 ```
 
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band a --bssid 00:00:00:00:00:00 --channel 1 \
-            --write-interval 5 --output-format pcap --write session0 wlan1
+            --write-interval 5 --output-format pcap wlan1 --write session0
 ```
 
 ```bash
