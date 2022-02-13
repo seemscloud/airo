@@ -44,14 +44,13 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 
 ### Target
 ```bash
+cat > target.sh << "EndOfMessage"
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
+            --write-interval 5 --output-format pcap --write target \
             --bssid CHANGEME --channel 1 wlan0
-```
+EndOfMessage
 
-```bash
-airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --write-interval 5 --output-format pcap --write sessions \
-            --bssid CHANGEME --channel 1 wlan0
+chmod +x target.sh
 ```
 
 ## Cracking
