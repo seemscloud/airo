@@ -1,3 +1,11 @@
+## General
+
+```bash
+1 ap
+2 sta
+3 ap+sta
+```
+
 ## Driver
 ```bash
 https://github.com/aircrack-ng/rtl8812au
