@@ -25,7 +25,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan0
 
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --write-interval 5 --output-format pcap wlan0 --write session0
+            --band abg --write-interval 5 --output-format pcap wlan0 --write session0
 ```
 
 ### Target
