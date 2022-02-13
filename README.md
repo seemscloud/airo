@@ -20,11 +20,9 @@ ip link set wlan1 up
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band a wlan0
-
 # or
-
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --band bg wlan0
+            --band bg wlan1
 ```
 
 ### Single BSSID
