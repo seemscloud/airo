@@ -16,11 +16,9 @@ ip link set wlan1 up
 
 ## Monitor
 ```bash
-airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --band a wlan0
-# or
-airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --band bg wlan1
+airodump-ng --manufacturer --beacons --showack --wps --uptime --band a wlan0
+
+airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan1
 ```
 
 ```bash
