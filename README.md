@@ -15,8 +15,6 @@ ip link set wlan1 up
 ```
 
 ## Monitor
-
-### Generic
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band a wlan0
@@ -25,13 +23,11 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band bg wlan1
 ```
 
-### Single BSSID
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --bssid 00:00:00:00:00:00 --channel 1 wlan0
 ```
 
-### Single BSSID + to File
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --bssid 00:00:00:00:00:00 --channel 1 \
