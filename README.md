@@ -33,16 +33,22 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --band abg wlan0
 ```
 
+### Channel
+```bash
+airodump-ng --manufacturer --beacons --showack --wps --uptime \
+            --bassid CHANGEME --band abg wlan0
+```
+
 ### Target
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --bssid 00:00:00:00:00:00 --channel 1 wlan0
+            --bssid CHANGEME --channel 1 wlan0
 ```
 
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --write-interval 5 --output-format pcap --write session0 \
-            --bssid 00:00:00:00:00:00 --channel 1 wlan0
+            --bssid CHANGEME --channel 1 wlan0
 ```
 
 ## Cracking
