@@ -44,13 +44,9 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 
 ### Target
 ```bash
-cat > target.sh << "EndOfMessage"
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --write-interval 5 --output-format pcap --write target \
-            --channel "${1}" --bssid "${2}" wlan0
-EndOfMessage
-
-chmod +x target.sh
+            --channel CHANGEME --bssid CHANGEME wlan0
 ```
 
 ## Cracking
