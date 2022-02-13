@@ -1,9 +1,15 @@
 ## General
 
+### AP `a`
 ```bash
 1 ap
 2 sta
 3 ap+sta
+```
+
+### Filter `s`
+```bash
+10 first seen
 ```
 
 ## Driver
