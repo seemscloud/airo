@@ -1,3 +1,15 @@
+## Informations
+
+### 2.4 GHz
+```bash
+1-14
+```
+
+### 5 GHz
+```bash
+1-14
+```
+
 ## Driver
 ```bash
 https://github.com/aircrack-ng/rtl8812au
