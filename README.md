@@ -2,7 +2,7 @@
 
 ### AP `a`
 ```bash
-1 ap
+1 apdo
 2 sta
 3 ap+sta
 ```
@@ -10,6 +10,7 @@
 ### Filter `s`
 ```bash
 10 first seen
+12 power rate
 ```
 
 ## Driver
