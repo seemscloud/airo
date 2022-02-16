@@ -31,16 +31,16 @@ ip link set wlan1 up
 
 ## Monitor
 
-### Generic
+### Observability - Generic
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime --band a wlan0
 airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan0
 ```
 
+### Observability - Channel
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --write-interval 1 --output-format csv --write sessions \
-            --band bg wlan0
+            --band bg wlan1
 ```
 
 ### Target
