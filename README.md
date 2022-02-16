@@ -40,7 +40,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime --band bg wlan0
 ### Observability - Channel
 ```bash
 airodump-ng --manufacturer --beacons --showack --wps --uptime \
-            --band bg --bssid CHANGEME wlan1
+            --band abg --bssid CHANGEME wlan1
 ```
 
 ### Target
