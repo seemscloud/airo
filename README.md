@@ -60,3 +60,11 @@ kill -9 `ps aux | grep -i aircrack | awk '{print $2}'`
 ```bash
 https://github.com/hashcat/hashcat-utils.git
 ```
+
+```bash
+cap2hccapx.bin input.cap output.hccapx
+```
+
+```bash
+hashcat --hash-type 2500 --attack-mode 3 --workload-profile 3 output.hccapx ?d?d?d?d?d?d?d?d
+```
