@@ -50,7 +50,7 @@ airodump-ng --manufacturer --beacons --showack --wps --uptime \
             --channel CHANGEME --bssid CHANGEME wlan1
 ```
 
-## Cracking
+## Deauth
 ```bash
 cat > deauth.sh << "EndOfMessage"
 iwconfig wlan1 channel "${1}"
@@ -65,3 +65,7 @@ chmod +x deauth.sh
 ```bash
 kill -9 `ps aux | grep -i aircrack | awk '{print $2}'`
 ```
+
+## Hashcat
+
+###
