@@ -1,4 +1,4 @@
-## General
+# `aircrack-ng`
 
 ```bash
 1 apdo
@@ -55,6 +55,8 @@ chmod +x deauth.sh
 kill -9 `ps aux | grep -i aircrack | awk '{print $2}'`
 ```
 
-```bash
+## `hashcat`
 
+```bash
+https://github.com/hashcat/hashcat-utils.git
 ```
